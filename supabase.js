@@ -9,4 +9,4 @@ export const supabase = url && anonKey
     })
   : null;
 
-export const isDemo = import.meta.env.VITE_DEMO_MODE !== "false" || !supabase;
+export const isDemo = !supabase;
